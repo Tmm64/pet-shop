@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Sandy's Pet Shop</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css" /> <!-- normalize -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css" /> <!-- main style sheet--> 
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.html"><img src="img/logo.jpg" alt="logo" ></a></div> 
+                
+            <nav class="main-nav">
+            <div id="menu-icon" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="slide-out-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="staff.html">Staff</a></li> 
+                    <li><a href="grooming.html">Grooming</a></li> 
+                    <li><a href="location.html">Location</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li> 
+                </ul>
+            </div>  
+            
+                <ul>
+                    <li class="nav-item menu">About Us <i class="down-arrow"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="staff.html">Our Staff</a></li>
+                        </ul>
+                    </li><!--
+                 --><li class="nav-item"><a href="grooming.html">Grooming</a></li><!--
+                 --><li class="nav-item"><a href="location.html">Store Location</a></li><!--
+                 --><li class="nav-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <main>
+            <div id="big-wrapper">
+                <section class="map-section">
+                    <h1>Find Us</h1>     
+                    <div id="map-container">
+                        <iframe width="100%" height="100%" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=4368%20W%20County%20Hwy%2030A%2C%20Santa%20Rosa%20Beach%2C%20FL&key=AIzaSyDfJJBueZDPBmxrvjyKLzdmGTFSnlmZtKw" allowfullscreen></iframe>
+                    </div> 
+                    <div class="address">
+                        <h2>Address</h2> 
+                        <p>4368 W County Hwy 30A, Santa Rosa Beach, FL</p>
+
+                        <h2>Directions</h2> 
+                        <p>From Destin</p>
+                        <ol>
+                            <li>Turn left onto US-98 E/Emerald Coast Pkwy</li> 
+                            <li>Continue to follow US-98 E for 8.8mi</li> 
+                            <li>Turn right onto W County Hwy 30A</li> 
+                            <li>Continue to follow W County Hwy 30a for 3.6mi</li> 
+                            <li>Destination will be on the left. 4368 W County Hwy 30A</li> 
+                        </ol> 
+                    </div> 
+                    <div class="hours">
+                        <h2>Hours of Operation</h2> 
+                        <p>Monday-Friday: <span class="move-it">9am - 5pm</span></p> 
+                        <p>Saturday: <span class="move-it">11am - 7pm</span></p> 
+                        <p>Sunday: <span class="move-it">Closed</span></p> 
+                    </div>
+                </section> 
+            </div> 
+        </main>
+            <footer>
+        <div id="footer-wrapper">
+            <div class="f-content" id="f-box1">
+                <h4>Address</h4>
+                <p>4368 W County Hwy 30A, Santa Rosa Beach, FL</p>
+            </div> 
+            
+            <div class="f-content" id="f-box2">
+                <h4>Hours of Operation</h4>
+                <p>Monday - Friday: 9am - 5pm</p>
+                <p>Saturday: 11am - 7pm </p>
+                <p>Sunday: Closed</p>
+            </div>  
+            <div id="services-wrapper">
+                <h4>Additional Services</h4>
+                <div id="f-box3">
+                    <p >Emerald Shores Pet Hospital<br>
+                    4925 Hwy 98W<br>
+                    Santa Rosa Beach, FL 32459<br>
+                    (850)622-0988<br>
+                    EmarldPetVet@gmail.com<br>
+                    www.EmeraldShoresVet.com</p>
+                </div> 
+                <div id="f-box4">
+                    <p >Let's Go Out<br>
+                    Walking/Daycare/Overnight Care<br>
+                    Annie Martin<br>
+                    (312)560-8680<br> 
+                    outwithannie@gmail.com</p> 
+                </div> 
+            </div> 
+        </div> 
+        <div id="foot-base">
+            <p>&copy; Sandy's PetShop</p> 
+        </div> 
+    </footer> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="scripts/hamburgerNav.js"></script>
+    </body>
+</html>
