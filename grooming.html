@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Sandy's Pet Shop</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css" /> <!-- normalize -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css" /> <!-- main style sheet--> 
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.php"><img src="img/logo.jpg" alt="logo" ></a></div> 
+                
+            <nav class="main-nav">
+            <div id="menu-icon" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="slide-out-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="staff.html">Staff</a></li> 
+                    <li><a href="grooming.html">Grooming</a></li> 
+                    <li><a href="location.html">Location</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li> 
+                </ul>
+            </div>  
+            
+                <ul>
+                    <li class="nav-item menu">About Us <i class="down-arrow"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="staff.html">Our Staff</a></li>
+                        </ul>
+                    </li><!--
+                 --><li class="nav-item"><a href="grooming.html">Grooming</a></li><!--
+                 --><li class="nav-item"><a href="location.html">Store Location</a></li><!--
+                 --><li class="nav-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+        </header>
+         <main>
+            <div id="big-wrapper">
+                <section>
+                    <h1>Grooming</h1> 
+                    <p id="grooming-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis orci vitae nisl condimentum malesuada. Proin viverra sapien at mi pharetra, a tristique ante accumsan.Sed tempus blandit ante sed euismod. Quisque molestie vulputate lorem sit amet condimentum.</p> 
+                    <div id="service-container">    
+                        <div id='test1'>
+                                <div id="mk1" class="service-img-container-mk2">
+                                    <img src="img/pug-basic.png" alt="photo of a Pug" /> 
+                                </div>
+
+                                <div id="basic" class="service-list"> 
+                                    <h3>Basic Grooming - $25</h3>
+                                    <ul>
+                                        <li>Bath</li>
+                                        <li>Hair cut</li>
+                                        <li>Toenail trim</li>
+                                        <li>Ear hair removal</li>
+                                    </ul>
+                                </div>
+                        </div> 
+                
+                        <div id='test2'>
+                            <div id="mk2" class="service-img-container-mk2">
+                                <img src="img/pug-deluxe.png" alt="Photo of a Pug" /> 
+                            </div>
+                            <div id="deluxe" class="service-list">
+                                <h3>Deluxe Grooming - $45*</h3>
+                                <ul>
+                                    <li>Massage</li>
+                                    <li>Deep conditioning treatment</li>
+                                    <li>Complimentary pet toy</li>
+                                    <li>Access to VIP pet play area</li>
+                                </ul>
+                                <p>*The Deluxe Package includes all services offered with the Basic Grooming Package.</p>
+                            </div>
+                        </div> 
+                    </div>  
+                    
+                    <div id="grooming-form-container">
+                        <h2 id="top">Sign Up</h2> 
+                        <div id="submit-success-msg">Thank you for signing up!</div> 
+                        <div id="submit-error-msg">Please Fill in the Required Field(s)</div> 
+                        <p>To book an appointment, please fill out the form below.</p>  
+                        <p>Fields with asterisk(*) are required.</p> 
+                        
+                        <form method="POST" action="handle_grooming_data.php" id="grooming-form"> 
+                            <div>
+                                <label for="fName">First Name*</label><br>
+                                <input type="text" id="fName" name="fName" maxlength="50" required/>
+                                <div class="error" id="firstNameErr"></div> 
+                            </div> 
+                           
+                            <div>
+                                <label for="lName">Last Name*</label><br>
+                                <input type="text" id="lName" name="lName" maxlength="50" required/> 
+                                <div class="error" id="lastNameErr"></div> 
+                            </div> 
+                            
+                            <div>
+                                <label for="address">Address*</label><br> 
+                                <input type="text" id="address" name="address" maxlength="200" required/> 
+                                <div class="error" id="addressErr"></div> 
+                            </div>
+
+                            <div>
+                                <label for="city">City*</label><br>
+                                <input type="text" id="city" name="city" maxlength="45" required/> 
+                                <div class="error" id="cityErr"></div>
+                            </div>
+
+                            <div>
+                                <label for="state">State*</label><br>
+                                <input type="text" id="state" name="state" maxlength="45" required/> 
+                                <div class="error" id="stateErr"></div>
+                            </div>
+
+                            <div>
+                                <label for="zipcode">Zip Code*</label><br>
+                                <input type="number" id="zipcode" name="zipcode" maxlength="45" required/> 
+                                <div class="error" id="zipCodeErr"></div>
+                            </div>
+
+                            <div>
+                                <label for="phone">Phone Number*</label><br> 
+                                <input type="tel" id="phone" name="phone" maxlength="15" required/> 
+                                <div class="error" id="phoneNumberErr"></div>
+                            </div>
+
+                            <div>
+                                <label for="email">Email Address</label><br>
+                                <input type="email" id="email" name="email" maxlength="150"/> 
+                                <div class="error" id="emailErr"></div>
+                            </div> 
+
+                            <div>
+                                <label for="pet-type">Select Pet Type*</label><br>
+                                <select name="pet-type" id="pet-type" required>
+                                    <option disabled selected value> -- select an option -- </option>
+                                    <option value="Cat">Cat</option> 
+                                    <option value="Dog">Dog</option> 
+                                </select>
+                                <div class="error" id="petTypeErr"></div>
+                            </div>
+
+                            <div id="breed-list"> 
+                                <label for="breed">Select Breed*</label> 
+                                <select name="breed" id="breed">
+                                    <option disabled selected value> -- select an option -- </option>
+                                    <option value="Golden Retriever">Golden Retriever</option> 
+                                    <option value="German Shepherd">German Shepherd</option> 
+                                    <option value="Bulldog">Bulldog</option> 
+                                    <option value="Beagle">Beagle</option> 
+                                    <option value="French Bulldog">French Bulldog</option> 
+                                    <option value="Yorkshire Terrier">Yorkshire Terrier</option> 
+                                    <option value="Poodle">Poodle</option> 
+                                    <option value="Rottweiler">Rottweiler</option> 
+                                    <option value="Boxer">Boxer</option> 
+                                    <option value="Boxer">Pug</option> 
+                                    <option value="Dachshund">Dachshund</option> 
+                                    <option value="Boxer">Other</option> 
+                                </select> 
+                                <div class="error" id="breedErr"></div>
+                            </div> 
+
+                            <div>
+                                <label for="pet-name">Pet's Name*</label>
+                                <input type="text" id="pet-name" name="pet-name" maxlength="45" required/> 
+                                <div class="error" id="petNameErr"></div>
+                            </div>
+                            
+                            <div>
+                                <input type="checkbox" name="fixed" id="pet-fixed" value = "true" >
+                                <label for="pet-fixed">Spayed/Neutered</label> 
+                            </div> 
+
+                            <div>
+                                <label for="pet-birthday">Pet's Date of Birth</label>
+                                <input type="date" id="pet-birthday" name="petBirthday" value="1111-01-01"/> 
+                            </div>
+                            <button type="submit" name="submit" value="submit">Submit</button> 
+                        </form> 
+                    </div> 
+                </section>
+            </div>
+        </main>
+       
+            <footer>
+        <div id="footer-wrapper">
+            <div class="f-content" id="f-box1">
+                <h4>Address</h4>
+                <p>4368 W County Hwy 30A, Santa Rosa Beach, FL</p>
+            </div> 
+            
+            <div class="f-content" id="f-box2">
+                <h4>Hours of Operation</h4>
+                <p>Monday - Friday: 9am - 5pm</p>
+                <p>Saturday: 11am - 7pm </p>
+                <p>Sunday: Closed</p>
+            </div>  
+            <div id="services-wrapper">
+                <h4>Additional Services</h4>
+                <div id="f-box3">
+                    <p >Emerald Shores Pet Hospital<br>
+                    4925 Hwy 98W<br>
+                    Santa Rosa Beach, FL 32459<br>
+                    (850)622-0988<br>
+                    EmarldPetVet@gmail.com<br>
+                    www.EmeraldShoresVet.com</p>
+                </div> 
+                <div id="f-box4">
+                    <p >Let's Go Out<br>
+                    Walking/Daycare/Overnight Care<br>
+                    Annie Martin<br>
+                    (312)560-8680<br> 
+                    outwithannie@gmail.com</p> 
+                </div> 
+            </div> 
+        </div> 
+        <div id="foot-base">
+            <p>&copy; Sandy's PetShop</p> 
+        </div> 
+    </footer> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="scripts/hamburgerNav.js"></script>
+    </body>
+</html>
+
