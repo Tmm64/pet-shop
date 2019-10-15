@@ -53,25 +53,25 @@
                         <form method="POST" id="contact-form" action="">
                             <div>
                                 <label for="fName">First Name*</label>
-                                <input type="text" id="contact-fName" name="fName" value="<?php echo htmlspecialchars($firstName) ?>"/> 
+                                <input type="text" id="contact-fName" name="fName" /> 
                                 <div class="error" id="firstNameErr"></div>
                             </div>
 
                             <div>
                                 <label for="lName">Last Name*</label> 
-                                <input type="text" id="contact-lName" name="lName" value="<?php echo htmlspecialchars($lastName) ?>"/> 
+                                <input type="text" id="contact-lName" name="lName"/> 
                                 <div class="error" id="lastNameErr"></div> 
                             </div> 
 
                             <div>
                                 <label for="email">Email Address*</label>
-                                <input type="text" id="contact-email" name="email" value="<?php echo htmlspecialchars($email) ?>"/> 
+                                <input type="text" id="contact-email" name="email" /> 
                                 <div class="error" id="emailErr"></div>  
                             </div>
 
                             <div>
                                 <label for="user-msg">Message*</label><br> 
-                                <textarea rows="5" cols="60" id="user-msg" name="user-msg" placeholder="Your message..."><?php echo htmlspecialchars($userMsg) ?></textarea>
+                                <textarea rows="5" cols="60" id="user-msg" name="user-msg" placeholder="Your message..."></textarea>
                                 <div class="error" id="userMsgErr"></div> 
                             </div> 
                             
