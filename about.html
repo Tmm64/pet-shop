@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>Sandy's Pet Shop</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="styles/normalize.css" /> <!-- normalize -->
+      <link rel="stylesheet" type="text/css" href="styles/main.css" /> <!-- main style sheet--> 
+  </head>
+  <body>
+    <header>
+      <div class="logo"><a href="index.php"><img src="img/logo.jpg" alt="logo" ></a></div> 
+      <nav class="main-nav">
+        <div id="menu-icon" >
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div id="slide-out-nav">
+          <ul>
+            <li><a href="about.php">About</a></li> 
+            <li><a href="staff.php">Staff</a></li> 
+            <li><a href="grooming.php">Grooming</a></li> 
+            <li><a href="location.php">Location</a></li> 
+            <li><a href="contact.php">Contact Us</a></li> 
+          </ul>
+        </div>  
+        <ul>
+          <li class="nav-item menu">About Us <i class="down-arrow"></i>
+            <ul class="dropdown-menu">
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="staff.php">Our Staff</a></li>
+            </ul>
+          </li><!--
+       --><li class="nav-item"><a href="grooming.php">Grooming</a></li><!--
+       --><li class="nav-item"><a href="location.php">Store Location</a></li><!--
+       --><li class="nav-item"><a href="contact.php">Contact Us</a></li>
+        </ul>
+      </nav> 
+    </header>
+    <main>
+      <div id="big-wrapper">
+        <section>
+          <h1>About Us</h1> 
+          <div id="about-img">
+            <img src="img/russ-cuthrell-1608834-unsplash.jpg" alt="photo of two dogs"/> 
+          </div> 
+          <p class="about-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam iaculis orci vitae nisl                      condimentum malesuada. Proin viverra sapien at mi pharetra, a tristique ante accumsan. Sed tempus blandit                    ante sed euismod. Quisque molestie vulputate lorem sit amet condimentum. Aliquam vitae hendrerit risus.                      Ut dignissim magna urna, eget sodales erat lobortis et.
+          </p>
+        </section>
+      </div> 
+    </main>
+    <footer>   
+        <p>&copy; Sandy's PetShop</p>   
+    </footer> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="scripts/hamburgerNav.js"></script>
+  </body>
+</html>
+
+
