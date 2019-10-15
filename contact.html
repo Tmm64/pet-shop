@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Sandy's Pet Shop</title>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="styles/normalize.css" /> <!-- normalize -->
+        <link rel="stylesheet" type="text/css" href="styles/main.css" /> <!-- main style sheet--> 
+    </head>
+    <body>
+        <header>
+            <div class="logo"><a href="index.php"><img src="img/logo.jpg" alt="logo" ></a></div> 
+                
+            <nav class="main-nav">
+            <div id="menu-icon" >
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="slide-out-nav">
+                <ul>
+                    <li><a href="about.html">About</a></li> 
+                    <li><a href="staff.html">Staff</a></li> 
+                    <li><a href="grooming.html">Grooming</a></li> 
+                    <li><a href="location.html">Location</a></li> 
+                    <li><a href="contact.html">Contact Us</a></li> 
+                </ul>
+            </div>  
+            
+                <ul>
+                    <li class="nav-item menu">About Us <i class="down-arrow"></i>
+                        <ul class="dropdown-menu">
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="staff.html">Our Staff</a></li>
+                        </ul>
+                    </li><!--
+                 --><li class="nav-item"><a href="grooming.html">Grooming</a></li><!--
+                 --><li class="nav-item"><a href="location.html">Store Location</a></li><!--
+                 --><li class="nav-item"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav> 
+        </header>
+         <main>
+            <div id="big-wrapper">
+                <section>
+                    <h1 id="top">Contact Us</h1> 
+                    <p id="contact-p">Thank you for checking out our Webpage. For business inquires feel free to send us a message below and we will get back to you as soon as possible.</p> 
+
+                    <div id="contact-form-container">
+                        <div id ="submit-success-msg">Message Sent!</div> 
+                        <div id="submit-error-msg">Please Fill in the Required Field(s)</div> 
+                        <p>Fields with asterisk(*) are required.</p>
+                        <form method="POST" id="contact-form" action="">
+                            <div>
+                                <label for="fName">First Name*</label>
+                                <input type="text" id="contact-fName" name="fName" value="<?php echo htmlspecialchars($firstName) ?>"/> 
+                                <div class="error" id="firstNameErr"></div>
+                            </div>
+
+                            <div>
+                                <label for="lName">Last Name*</label> 
+                                <input type="text" id="contact-lName" name="lName" value="<?php echo htmlspecialchars($lastName) ?>"/> 
+                                <div class="error" id="lastNameErr"></div> 
+                            </div> 
+
+                            <div>
+                                <label for="email">Email Address*</label>
+                                <input type="text" id="contact-email" name="email" value="<?php echo htmlspecialchars($email) ?>"/> 
+                                <div class="error" id="emailErr"></div>  
+                            </div>
+
+                            <div>
+                                <label for="user-msg">Message*</label><br> 
+                                <textarea rows="5" cols="60" id="user-msg" name="user-msg" placeholder="Your message..."><?php echo htmlspecialchars($userMsg) ?></textarea>
+                                <div class="error" id="userMsgErr"></div> 
+                            </div> 
+                            
+                            
+                            <button type="submit" name="submit" value="submit">Submit</button> 
+                        </form> 
+                    </div> 
+                </section> 
+            </div>
+        </main>
+      
+            <footer>
+        <div id="footer-wrapper">
+            <div class="f-content" id="f-box1">
+                <h4>Address</h4>
+                <p>4368 W County Hwy 30A, Santa Rosa Beach, FL</p>
+            </div> 
+            
+            <div class="f-content" id="f-box2">
+                <h4>Hours of Operation</h4>
+                <p>Monday - Friday: 9am - 5pm</p>
+                <p>Saturday: 11am - 7pm </p>
+                <p>Sunday: Closed</p>
+            </div>  
+            <div id="services-wrapper">
+                <h4>Additional Services</h4>
+                <div id="f-box3">
+                    <p >Emerald Shores Pet Hospital<br>
+                    4925 Hwy 98W<br>
+                    Santa Rosa Beach, FL 32459<br>
+                    (850)622-0988<br>
+                    EmarldPetVet@gmail.com<br>
+                    www.EmeraldShoresVet.com</p>
+                </div> 
+                <div id="f-box4">
+                    <p >Let's Go Out<br>
+                    Walking/Daycare/Overnight Care<br>
+                    Annie Martin<br>
+                    (312)560-8680<br> 
+                    outwithannie@gmail.com</p> 
+                </div> 
+            </div> 
+        </div> 
+        <div id="foot-base">
+            <p>&copy; Sandy's PetShop</p> 
+        </div> 
+    </footer> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <script src="scripts/hamburgerNav.js"></script>
+    </body>
+</html>
