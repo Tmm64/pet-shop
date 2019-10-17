@@ -628,6 +628,22 @@ FOOTER STYLE END
 /*********
 Media Queries 
 ***********/ 
+@media screen and (min-width: 1440px){
+    body,html{
+        margin: 0 auto; 
+    }
+
+    .home-arrow{
+        display: none; 
+    }
+}
+
+
+
+
+
+
+
 @media screen and (max-width: 1200px){ 
     .right{
         float: none; 
